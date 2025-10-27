@@ -1,6 +1,6 @@
 # Producer-Consumer (POSIX Shared Memory & Semaphores)
 
-This project demonstrates a simple **Producer-Consumer problem** implemented in C using **POSIX shared memory** (`shm_open`, `mmap`) and **semaphores** (`sem_open`, `sem_wait`, `sem_post`) for inter-process synchronization.
+This project demonstrates a Producer-Consumer problem implemented in C++ using POSIX shared memory and semaphores for inter-process synchronization.
 
 The programs are designed to run inside an Ubuntu Docker container.
 
@@ -8,8 +8,8 @@ The programs are designed to run inside an Ubuntu Docker container.
 
 ## Overview
 
-- **Producer (`producer.c`)** generates a sequence of integers and writes them to a shared memory buffer.
-- **Consumer (`consumer.c`)** reads the integers from shared memory and prints them.
+- Producer (`producer.cpp`) generates a sequence of integers and writes them to a shared memory buffer.
+- Consumer (`consumer.cpp`) reads the integers from shared memory and prints them.
 - Synchronization is handled using named semaphores to prevent race conditions.
 
 ---
@@ -17,13 +17,13 @@ The programs are designed to run inside an Ubuntu Docker container.
 ## Requirements
 
 - Docker (latest version)
-- GCC and POSIX libraries inside the container (`build-essential`, `libc6-dev`)
+- GCC and POSIX libraries inside the Docker container (`build-essential`)
 
 ---
 
 ## Setup and Run
 
-### 1️⃣ Build and run the Docker container
+# Build and run the Docker container
 From your host system:
 
 Copy files from Host to Docker Container:
