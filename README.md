@@ -46,14 +46,13 @@ Execute in the same Docker Container:
 
 ./producer & ./consumer &
 
-----------------------------
 Output:
 
 Produced: 0
 Produced: 1
 Consumed: 0
 Consumed: 1
-----------------------------
+
 
 
 You can then stop the process in a seperate terminal by entering:
