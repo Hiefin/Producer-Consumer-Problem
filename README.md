@@ -61,7 +61,7 @@ docker stop <container_id>
 
 
 EXAMPLE:
-![Producer-consumerproblem example](PCP-Example1.jpg)
+![Producer-consumerproblem example](PCP-Example2.jpg)
 
 
 
