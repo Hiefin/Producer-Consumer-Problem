@@ -21,13 +21,12 @@ The programs are designed to run inside an Ubuntu Docker container.
 
 ---
 
-## Setup and Run
-
 # Build and run the Docker container
 From your host system:
-
+-----------------------
 Copy files from Host to Docker Container:
 docker cp FOLDER_NAME CONTAINER_NAME:/Producer-Consumer
+
 
 From inside that container we need to install g++ which is a compiler for c++ files:
 
@@ -35,22 +34,27 @@ cd /mnt/work
 apt update
 apt install -y build-essential
 
+
 This will install all you need to run onto a Docker Linux Ubuntu container.
 Now compile the Code with:
 
 g++ producer.cpp -pthread -lrt -o producer
 g++ consumer.cpp -pthread -lrt -o consumer
 
+
 Execute in the same Docker Container:
 
 ./producer & ./consumer &
 
+----------------------------
 Output:
 
 Produced: 0
 Produced: 1
 Consumed: 0
 Consumed: 1
+----------------------------
+
 
 You can then stop the process in a seperate terminal by entering:
 
