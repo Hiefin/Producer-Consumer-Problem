@@ -60,6 +60,10 @@ You can then stop the process in a seperate terminal by entering:
 docker stop <container_id>
 
 
+EXAMPLE:
+![Producer-consumerproblem example](PCP-Example1.jpg)
+
+
 
 
 
